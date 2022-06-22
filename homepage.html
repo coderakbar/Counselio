@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
+    <script src="scripts/dropdown.js" defer></script>
   </head>
   <body>
     <section class="header">
@@ -24,7 +25,7 @@
         <div class="nav-links" id="navlinks">
           <i class="fa fa-times" onclick="hidemenu()"> </i>
           <ul>
-            <li><a href="#">Menu</a></li>
+            <li><a href="#" onclick="dropdown()">Menu</a></li>
             <li><a href="#" onhover="dropdown()">Home</a></li>
             <li>
               <a href="#">Class 9<sup>nth</sup></a>
@@ -41,6 +42,14 @@
             <li><a href="#">Dropper</a></li>
             <li><a href="#">Career library</a></li>
             <li><a href="#" class="demo-btn">log in</a></li>
+          </ul>
+          <ul class="dropdown-menu1" id="dropdown1">
+            <li><a href="#">schedule a demo</a></li>
+            <li><a href="#">book a session</a></li>
+            <li><a href="#">payment status</a></li>
+            <li><a href="#">cancellation/refund</a></li>
+            <li><a href="#">refer and earn</a></li>
+            <li><a href="#">help</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showmenu()"></i>
