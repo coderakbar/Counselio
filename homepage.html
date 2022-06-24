@@ -17,6 +17,8 @@
       rel="stylesheet"
     />
     <script src="scripts/dropdown.js" defer></script>
+    <script src="scripts/Dropdown1.js" defer></script>
+    <script src = "scripts/sidemenu.js" defer></script>
   </head>
   <body>
     <section class="header">
@@ -25,8 +27,8 @@
         <div class="nav-links" id="navlinks">
           <i class="fa fa-times" onclick="hidemenu()"> </i>
           <ul>
-            <li><a href="#" onclick="dropdown()">Menu</a></li>
-            <li><a href="#" onhover="dropdown()">Home</a></li>
+            <li><a href="#" onclick="myFunction()" class="dropbtn">Menu</a></li>
+            <li><a href="#" onclick="myFunction1()" class="dropbtn1">Home</a></li>
             <li>
               <a href="#">Class 9<sup>nth</sup></a>
             </li>
@@ -43,14 +45,30 @@
             <li><a href="#">Career library</a></li>
             <li><a href="#" class="demo-btn">log in</a></li>
           </ul>
-          <ul class="dropdown-menu1" id="dropdown1">
-            <li><a href="#">schedule a demo</a></li>
-            <li><a href="#">book a session</a></li>
-            <li><a href="#">payment status</a></li>
-            <li><a href="#">cancellation/refund</a></li>
-            <li><a href="#">refer and earn</a></li>
-            <li><a href="#">help</a></li>
-          </ul>
+
+          <div class="dropdown">
+            <ul class="dropdown-content" id="myDropdown">
+              <li><a href="#">schedule a demo</a></li>
+              <li><a href="#">book a session</a></li>
+              <li><a href="#">payment status</a></li>
+              <li><a href="#">cancellation/refund</a></li>
+              <li><a href="#">refer and earn</a></li>
+              <li><a href="#">help</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown1">
+            <ul class="dropdown-content1" id="myDropdown1">
+                <li><a href="#">Registration-form</a></li>
+                <li><a href="#">About-company</a></li>
+                <li><a href="#">about founders</a></li>
+                <li><a href="#">Book a session</a></li>
+                <li><a href="#">Our counsellor's profiles</a></li>
+                <li><a href="#">our core services</a></li>
+                <li><a href="#">success stories</a></li>
+                <li><a href="#">Latest blogs</a></li>
+            </ul>
+          </div>
         </div>
         <i class="fa fa-bars" onclick="showmenu()"></i>
       </nav>
@@ -180,7 +198,7 @@
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3">
               <div class="widget subscribe no-box">
-                <h5 class="widget-title">COMPANY NAME<span></span></h5>
+                <h5 class="widget-title">COUNSELLIO<span></span></h5>
                 <p>About the company, little discription will goes here..</p>
               </div>
             </div>
@@ -191,29 +209,30 @@
                 <ul class="thumbnail-widget">
                   <li>
                     <div class="thumb-content">
-                      <a href="#.">Get Started</a>
+                      <a href="#.">About COUNSELLIO</a>
                     </div>
                   </li>
                   <li>
                     <div class="thumb-content">
-                      <a href="#.">Top Leaders</a>
+                      <a href="#.">What is career counselling</a>
                     </div>
                   </li>
                   <li>
                     <div class="thumb-content">
-                      <a href="#.">Success Stories</a>
+                      <a href="#.">what are career assessments
+                      </a>
                     </div>
                   </li>
                   <li>
                     <div class="thumb-content">
-                      <a href="#.">Event/Tickets</a>
+                      <a href="#.">why is it important?</a>
                     </div>
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#.">News</a></div>
+                    <div class="thumb-content"><a href="#.">how to identify the best counselling services in India</a></div>
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#.">Lifestyle</a></div>
+                    <div class="thumb-content"><a href="#.">How counsellio is the best counselling services in India</a></div>
                   </li>
                   <li>
                     <div class="thumb-content"><a href="#.">About</a></div>
@@ -307,16 +326,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      var navlinks = document.getElementById("navlinks");
-
-      function showmenu() {
-        navlinks.style.right = "0";
-      }
-
-      function hidemenu() {
-        navlinks.style.right = "-200px";
-      }
-    </script>
   </body>
 </html>
